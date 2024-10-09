@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 const dbPath = path.join(__dirname, "salesDatabase.db");
 let db;
-
+console.log("hello")
 const initializeDBAndServer = async () => {
   try {
     db = await open({
